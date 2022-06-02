@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="root" fx:id="title" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="689.0" prefWidth="896.0" stylesheets="@../../../../java/com/example/deneme/ApplicationStyle.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.deneme.Controller">
+    <children>
+        <ImageView fitHeight="187.0" fitWidth="187.0" layoutX="273.0" layoutY="528.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@yesil.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="187.0" fitWidth="202.0" layoutX="123.0" layoutY="529.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@sari.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="214.0" fitWidth="184.0" layoutX="-15.0" layoutY="530.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@kirmizi.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="502.0" fitWidth="504.0" layoutX="2.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@petekler.png" />
+            </image>
+        </ImageView>
+
+
+        <Pane />
+        <Button fx:id="A_tus" layoutX="100.0" layoutY="259.0" mnemonicParsing="false" onMouseClicked="#display" prefHeight="62.0" prefWidth="76.0" style="-fx-background-color: #D9D9D9;" text="A">
+            <font>
+                <Font size="34.0" />
+            </font>
+        </Button>
+        <Button fx:id="I_tus" layoutX="214.0" layoutY="185.0" mnemonicParsing="false" onMouseClicked="#displayI" prefHeight="90.0" prefWidth="76.0" style="-fx-background-color: #D9D9D9;" text="İ">
+            <font>
+                <Font size="31.0" />
+            </font>
+        </Button>
+        <Button fx:id="L_tus" layoutX="330.0" layoutY="249.0" mnemonicParsing="false" onMouseClicked="#displayL" prefHeight="82.0" prefWidth="66.0" style="-fx-background-color: #D9D9D9;" text="L">
+            <font>
+                <Font size="33.0" />
+            </font>
+        </Button>
+        <Button fx:id="M_tus" layoutX="101.0" layoutY="380.0" mnemonicParsing="false" onMouseClicked="#displayM" prefHeight="90.0" prefWidth="76.0" style="-fx-background-color: #D9D9D9;" text="M">
+            <font>
+                <Font size="31.0" />
+            </font>
+        </Button>
+        <Button fx:id="E_tus" layoutX="215.0" layoutY="447.0" mnemonicParsing="false" onMouseClicked="#displayE" prefHeight="90.0" prefWidth="76.0" style="-fx-background-color: #D9D9D9;" text="E">
+            <font>
+                <Font size="35.0" />
+            </font>
+        </Button>
+        <Button fx:id="S_tus" layoutX="328.0" layoutY="380.0" mnemonicParsing="false" onMouseClicked="#displayS" prefHeight="90.0" prefWidth="76.0" style="-fx-background-color: #D9D9D9;" text="S">
+            <font>
+                <Font size="34.0" />
+            </font>
+        </Button>
+        <Button fx:id="K_tus" layoutX="216.0" layoutY="320.0" mnemonicParsing="false" onMouseClicked="#displayK" prefHeight="81.0" prefWidth="76.0" style="-fx-background-color: #FAFF00;" text="K">
+            <font>
+                <Font size="36.0" />
+            </font>
+        </Button>
+        <Button fx:id="clean" ellipsisString="" layoutX="44.0" layoutY="598.0" mnemonicParsing="false" onMouseClicked="#Clear" prefHeight="47.0" prefWidth="66.0" style="-fx-background-color: #FF1616;" text="SİL" textFill="WHITE" textOverrun="CLIP">
+            <font>
+                <Font name="System Bold" size="19.0" />
+            </font>
+        </Button>
+        <Label fx:id="kelime" layoutX="511.0" layoutY="546.0" prefHeight="47.0" prefWidth="346.0" style="-fx-background-color: #ff6e7f;" textFill="WHITE">
+            <font>
+                <Font size="32.0" />
+            </font>
+        </Label>
+        <Button fx:id="yazdir" ellipsisString="" layoutX="183.0" layoutY="603.0" mnemonicParsing="false" onAction="#Bas" prefHeight="38.0" prefWidth="66.0" style="-fx-background-color: #FAFF00;" text="GİRİŞ" textFill="WHITE" textOverrun="CLIP">
+            <font>
+                <Font name="System Bold" size="17.0" />
+            </font>
+        </Button>
+        <Button fx:id="degisim" ellipsisString="" layoutX="331.0" layoutY="594.0" mnemonicParsing="false" onMouseClicked="#Replace" prefHeight="57.0" prefWidth="76.0" style="-fx-background-color: #7ED957;" text="♻" textFill="WHITE" textOverrun="CLIP">
+            <font>
+                <Font name="System Bold" size="25.0" />
+            </font>
+        </Button>
+        <Pane fx:id="arka" layoutX="216.0" layoutY="25.0" prefHeight="86.0" prefWidth="462.0">
+            <children>
+                <TextField fx:id="out" layoutX="73.0" layoutY="29.0" prefHeight="47.0" prefWidth="389.0" promptText="Kelimeyi giriniz..">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </TextField>
+            </children>
+        </Pane>
+        <ImageView fitHeight="187.0" fitWidth="193.0" layoutX="21.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@bee.png" />
+            </image>
+        </ImageView>
+      <ListView fx:id="liste" layoutX="530.0" layoutY="209.0" prefHeight="304.0" prefWidth="308.0" />
+      <TableView fx:id="table" layoutX="530.0" layoutY="209.0" prefHeight="304.0" prefWidth="308.0">
+        <columns>
+          <TableColumn fx:id="kelimeler" prefWidth="151.20001220703125" text="Kelimeler" />
+          <TableColumn fx:id="puan" prefWidth="156.00006103515625" text="Puan" />
+        </columns>
+      </TableView>
+
+
+    </children>
+</AnchorPane>
